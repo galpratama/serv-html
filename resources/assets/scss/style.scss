@@ -8,9 +8,25 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.hide-scroll-bar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scroll-bar::-webkit-scrollbar {
+  display: none;
+}
+
+.dragscroll {
+    cursor: grab;
+}
+
 .navbar-1-1 #menu-toggle:checked+#menu,
 .navbar-1-1 #menu-toggle:checked+#menu+#menu {
     display: block;
+}
+
+.align-sub {
+    vertical-align: sub;
 }
 
 @media only screen and (min-width: 992px) {

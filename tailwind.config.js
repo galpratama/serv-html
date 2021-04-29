@@ -5,6 +5,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      extend: {
+        verticalAlign: ['sub'],
+      },
       colors: {
         'serv-bg': '#082431',
         'serv-text': '#A2ADB1',
@@ -14,6 +17,13 @@ module.exports = {
         'serv-email': '#0B2D3D',
         'serv-login-bg': '#D5D5E1',
         'serv-login-text': '#5C5C69',
+        'serv-services-bg': '#F4F4FA'
+      },
+      spacing: {
+        '13': '3.25rem',
+        '15': '3.75rem',
+        '128': '32rem',
+        '144': '36rem',
       }
     },
   },
