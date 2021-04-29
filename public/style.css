@@ -33253,6 +33253,11 @@ body {
   .hero-bg {
     background-image: url(./images/hero-bg.svg?b942ed5479fb6ac267a4bcfdce95a75f);
   }
+
+  .cta-bg {
+    background-image: url(./images/cta-bg.svg?e4996d535cf40ce4be1866c2a45b5493);
+    background-position: center top;
+  }
 }
 
 @media (min-width: 640px){
