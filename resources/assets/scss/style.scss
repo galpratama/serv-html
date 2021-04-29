@@ -7,3 +7,14 @@
 body {
     font-family: 'Poppins', sans-serif;
 }
+
+.navbar-1-1 #menu-toggle:checked+#menu,
+.navbar-1-1 #menu-toggle:checked+#menu+#menu {
+    display: block;
+}
+
+@media only screen and (min-width: 992px) {
+    .hero-bg {
+        background-image: url('../images/hero-bg.svg');
+    }
+}

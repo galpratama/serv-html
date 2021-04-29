@@ -11,7 +11,9 @@ module.exports = {
         'serv-email-text': '#537180',
         'serv-border': '#16303D',
         'serv-button': '#22B07D',
-        'serv-email': '#0B2D3D'
+        'serv-email': '#0B2D3D',
+        'serv-login-bg': '#D5D5E1',
+        'serv-login-text': '#5C5C69',
       }
     },
   },

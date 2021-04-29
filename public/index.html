@@ -11,13 +11,99 @@
 </head>
 
 <body class="antialiased">
-    <div class="relative bg-gray-100">
-        <!-- component -->
-        <footer class="footer bg-serv-bg relative py-2">
-            <div class="container mx-auto px-6">
+    <div class="relative">
+        <div class="hero-bg">
+            <!-- header -->
+            <section
+                class="h-full w-full border-box transition-all duration-500 linear lg:px-16 md:px-20 px-8 py-8 bg-white">
+                <div class="navbar-1-1" style="font-family: 'Poppins', sans-serif">
+                    <div class=" mx-auto flex flex-wrap flex-row items-center justify-between">
+                        <a href="" class="flex text-3xl font-bold items-center">
+                            SERV
+                        </a>
+                        <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+                            <svg class="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16">
+                                </path>
+                            </svg>
+                        </label>
+                        <input class="hidden" type="checkbox" id="menu-toggle" />
+                        <div class="hidden lg:flex lg:items-center lg:w-auto w-full lg:ml-auto lg:mr-auto flex-wrap items-center text-base justify-center"
+                            id="menu">
+                            <nav
+                                class="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6">
+                                <a href="" class="block nav-link active font-medium">Home</a>
+                                <a href="" class="block nav-link text-serv-text">Explore</a>
+                                <a href="" class="block nav-link text-serv-text">How It Works</a>
+                                <a href="" class="block nav-link text-serv-text">Stories</a>
+                                <a href="" class="block nav-link text-serv-text">Tips</a>
+                            </nav>
+                        </div>
 
+                        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+                            <button
+                                class="bg-serv-login-bg text-serv-login-text items-center border-0 py-3 px-10 focus:outline-none rounded-2xl font-medium text-base mt-6 lg:mt-0">
+                                Log In
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- hero -->
+            <div>
+                <div class="mx-auto flex pt-16 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col">
+                    <!-- Left Column -->
+                    <div
+                        class="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center text-center">
+                        <h1
+                            class="text-black-1 lg:leading-normal sm:text-4xl lg:text-5xl text-3xl mb-5 font-semibold lg:mt-20">
+                            Finish Your Project With <br class="lg:block hidden">
+                            Ours Best Freelancers
+                        </h1>
+                        <p class="text-lg leading-relaxed text-serv-text font-light tracking-wide mb-10 lg:mb-18 ">
+                            Temukan ribuan pekerja remote yang <br class="lg:block hidden">
+                            memiliki skills dan pengalaman terbaik <br class="lg:block hidden">
+                            untuk membantu anda.
+                        </p>
+                        <div
+                            class="md:flex contents items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 space-x-0">
+                            <button class="bg-serv-button text-white text-lg py-4 px-12 my-2 rounded-lg">
+                                Get Started
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Right Column -->
+                    <div class="w-full lg:w-1/2 text-center lg:justify-start justify-center flex pr-0">
+                        <img class="bottom-0 lg:block lg:right-24 md:right-16 sm:right-8 right-8 w-75"
+                            src="hero-image.png" alt="" />
+                    </div>
+                </div>
+                <div class="mb-20 sm:flex sm:space-x-4">
+                    <div class="flex-1 flex items-center justify-center py-3 px-6">
+                        <img src="brand-logo/netflix.svg" alt="">
+                    </div>
+                    <div class="flex-1 flex items-center justify-center py-3 px-6">
+                        <img src="brand-logo/amazon.svg" alt="">
+                    </div>
+                    <div class="flex-1 flex items-center justify-center py-3 px-6">
+                        <img src="brand-logo/uber.svg" alt="">
+                    </div>
+                    <div class="flex-1 flex items-center justify-center py-3 px-6">
+                        <img src="brand-logo/grab.svg" alt="">
+                    </div>
+                    <div class="flex-1 flex items-center justify-center py-3 px-6">
+                        <img src="brand-logo/google.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer class="footer bg-serv-bg relative py-2">
+            <div class="mx-auto lg:px-16 md:px-20 px-8 py-8 ">
                 <div class="sm:flex sm:mt-16">
-                    <div class="mt-8 sm:mt-0 sm:w-full sm:px-8 flex flex-col md:flex-row justify-between">
+                    <div class="mt-8 sm:mt-0 sm:w-full flex flex-col md:flex-row justify-between">
                         <div class="flex-1 mt-2 flex-col">
                             <h2 class="font-medium text-white text-lg mb-4">Company</h2>
                             <div class="my-3">
@@ -111,8 +197,8 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto px-6">
-                <div class="mt-16 border-t border-serv-border sm:flex justify-between my-8 w-100 ">
+            <div class="mx-auto lg:px-16 md:px-20 px-8 py-8 ">
+                <div class="mt-16 border-t border-serv-border sm:flex justify-between w-100 ">
                     <div class="flex items-left mt-8">
                         <h1 class="text-white text-3xl font-bold">
                             SERV
