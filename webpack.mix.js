@@ -11,7 +11,7 @@ let mix = require('laravel-mix');
  |
  */
 
-mix.postCss('resources/assets/css/style.css', 'style.css')
+mix.sass('resources/assets/scss/style.scss', 'style.css')
 
 mix.options({
     postCss: [
