@@ -2,14 +2,8 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.css"
-        integrity="sha512-UiVP2uTd2EwFRqPM4IzVXuSFAzw+Vo84jxICHVbOA1VZFUyr4a6giD9O3uvGPFIuB2p3iTnfDVLnkdY7D/SJJQ=="
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+    <?php include 'includes/meta.php' ?>
+    <?php include 'includes/styles.php' ?>
     <title>Serv</title>
 </head>
 
@@ -18,46 +12,10 @@
         <!-- top -->
         <div class="hero-bg">
             <!-- header -->
-            <section
-                class="h-full w-full border-box transition-all duration-500 linear lg:px-16 md:px-20 px-8 py-8 bg-white">
-                <div class="navbar-1-1" style="font-family: 'Poppins', sans-serif">
-                    <div class=" mx-auto flex flex-wrap flex-row items-center justify-between">
-                        <a href="" class="flex text-3xl font-bold items-center">
-                            SERV
-                        </a>
-                        <label for="menu-toggle" class="cursor-pointer lg:hidden block">
-                            <svg class="w-6 h-6" fill="none" stroke="#092A33" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16">
-                                </path>
-                            </svg>
-                        </label>
-                        <input class="hidden" type="checkbox" id="menu-toggle" />
-                        <div class="hidden lg:flex lg:items-center lg:w-auto w-full lg:ml-auto lg:mr-auto flex-wrap items-center text-base justify-center"
-                            id="menu">
-                            <nav
-                                class="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6">
-                                <a href="" class="block nav-link active font-medium">Home</a>
-                                <a href="" class="block nav-link text-serv-text">Explore</a>
-                                <a href="" class="block nav-link text-serv-text">How It Works</a>
-                                <a href="" class="block nav-link text-serv-text">Stories</a>
-                                <a href="" class="block nav-link text-serv-text">Tips</a>
-                            </nav>
-                        </div>
+            <?php include 'components/navbar.php' ?>
 
-                        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
-                            <button
-                                onclick="toggleModal('loginModal')"
-                                class="bg-serv-login-bg text-serv-login-text items-center border-0 py-3 px-10 focus:outline-none rounded-2xl font-medium text-base mt-6 lg:mt-0">
-                                Log In
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </section>
             <!-- hero -->
-            <div>
+            <div class="hero">
                 <div class="mx-auto flex pt-16 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col">
                     <!-- Left Column -->
                     <div
@@ -74,7 +32,7 @@
                         </p>
                         <div
                             class="md:flex contents items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 space-x-0">
-                            <button class="bg-serv-button text-white text-lg py-4 px-12 my-2 rounded-lg">
+                            <button class="bg-serv-button text-white text-lg py-4 px-12 my-2 rounded-lg" onclick="toggleModal('registerModal')">
                                 Get Started
                             </button>
                         </div>
@@ -525,274 +483,13 @@
         </div>
 
         <!-- footer -->
-        <footer class="footer bg-serv-bg relative py-2">
-            <div class="mx-auto lg:px-16 md:px-20 px-8 py-8 ">
-                <div class="sm:flex sm:mt-16">
-                    <div class="mt-8 sm:mt-0 sm:w-full flex flex-col md:flex-row justify-between">
-                        <div class="flex-1 mt-2 flex-col">
-                            <h2 class="font-medium text-white text-lg mb-4">Company</h2>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Home
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Explore
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    How It Work
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Stories
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Tips
-                                </a>
-                            </div>
-                        </div>
-                        <div class="flex-1 mt-2 flex-col">
-                            <h4 class="font-medium text-white text-lg mt-4 md:mt-0 mb-4">Featured Services</h4>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Programming &amp; Tech
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Graphics &amp; Design
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Digital Marketing
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Business
-                                </a>
-                            </div>
-                        </div>
-                        <div class="flex-1 mt-2 flex-col">
-                            <h4 class="font-medium text-white text-lg mt-4 md:mt-0 mb-4">Our Community</h4>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Instagram
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Telegram
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Facebook
-                                </a>
-                            </div>
-                            <div class="my-3">
-                                <a href="#" class="text-serv-text font-light">
-                                    Discord
-                                </a>
-                            </div>
-                        </div>
-                        <div class="flex-1 mt-2 flex-col lg:mr-28">
-                            <h4 class="font-medium text-white text-lg mt-4 md:mt-0 mb-4">Get Weekly Updates & Tips</h4>
-                            <div class="my-3">
-                                <p class="text-serv-text font-light">
-                                    Subscribe to our newsletter to get your
-                                    weekly dose of news, updates, tips and
-                                    special offers. In every monday!
-                                </p>
-                                <div class="flex flex-wrap items-stretch w-full mt-4 relative h-15 hover:text-white bg-serv-email rounded-lg items-center rounded mb-2 pr-5">
-                                    <div class="flex -mr-px justify-center w-15 p-4">
-                                      <span
-                                        class="flex items-center leading-normal bg-serv-email px-3 border-0 rounded rounded-r-none text-2xl text-gray-600"
-                                      >
-                                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <rect x="2" y="5" width="20" height="14" rx="3" fill="#22B07D"/>
-                                        <path d="M5 8L12 12L19 8" stroke="#0F3040" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                        
-                                      </span>
-                                    </div>
-                                    <input
-                                      type="text"
-                                      class="flex-shrink flex-grow flex-auto w-px flex-1 border-0 h-10 border-grey-light rounded rounded-l-none pr-3 self-center relative outline-none bg-serv-email  "
-                                      placeholder="yourmail@domain.com"
-                                    />
-                                </div>
-                                <button class="bg-serv-button text-white text-lg py-4 px-4 my-2 rounded-lg w-full">
-                                    Subscribe
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mx-auto lg:px-16 md:px-20 px-8 py-8 ">
-                <div class="mt-16 border-t border-serv-border sm:flex justify-between w-100 ">
-                    <div class="flex items-left mt-8">
-                        <h1 class="text-white text-3xl font-bold">
-                            SERV
-                        </h1>
-                    </div>
-                    <div class="sm:flex items-center justify-center mt-8 lg:ml-24">
-                        <p class="text-serv-text">
-                        <div class="sm:flex sm:space-x-6">
-                            <span class="sm:flex block">
-                                <a href="#" class="text-serv-text">Terms</a>
-                            </span>
-                            <span class="sm:flex block">
-                                <a href="#" class="text-serv-text">Privacy</a>
-                            </span>
-                            <span class="sm:flex block">
-                                <a href="#" class="text-serv-text">Updates</a>
-                            </span>
-                            <span class="sm:flex block">
-                                <a href="#" class="text-serv-text">Contact us</a>
-                            </span>
-                        </div>
-                        </p>
-                    </div>
-                    <div class="flex items-right flex-end mt-8">
-                        <p class="text-serv-text">
-                            &copy; 2021 Serv All rights reserved.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <?php include 'components/footer.php' ?>
     </div>
-    <div class="hidden modal overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="loginModal" >
-        <div class="relative w-128 my-6 mx-auto max-w-md">
-        <!--content-->
-        <div class="border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-            <!--header-->
-            <div class="p-5 rounded-t-xl text-center mt-5 mx-10">
-            <h3 class="text-2xl font-semibold">
-                Log in to Serv
-            </h3>
-            <p class="text-gray-400 mt-1 text-sm">
-                Enter your email & password to continue
-            </p>
-            </div>
-            <!--body-->
-            <div class="relative p-6 flex-auto mx-10">
-                <div class="mb-4">
-                    <label class="block text-grey-darker text-sm mb-2" for="username">
-                        Email
-                    </label>
-                    <input class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 placeholder-serv-text text-xs" id="username" type="text" placeholder="name@domain.com">
-                    </div>
-                    <div>
-                    <label class="block text-grey-darker text-sm mb-2" for="password">
-                        Password
-                    </label>
-                    <input class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 placeholder-serv-text text-xs mb-3" id="password" type="password" placeholder="At least 8 characters">
-                    </div>
-                    <div class="flex items-center justify-between">
-                    <div class="inline-block text-xs text-gray-400">
-                        <label class="inline-flex items-center mt-3">
-                            <input type="checkbox" class="form-checkbox h-5 w-5 text-serv-button rounded border-serv-text"><span class="ml-2 text-gray-400">Remember me</span>
-                        </label>
-                    </div>
-                    <a class="inline-block align-baseline text-xs text-serv-button mt-2 font-medium" href="#">
-                        Forgot Password?
-                    </a>
-                    </div>
-            </div>
-            <!--footer-->
-            <div class="px-6 pb-6 rounded-b-xl mx-10">
-                <button class="bg-serv-button text-white text-lg py-3 px-12 my-2 rounded-lg w-full">
-                    Log in
-                </button>
-                <p href="#" class="text-center py-5">
-                    Dont have account? <a href="#" class="text-serv-button" onclick="toggleModal('loginModal');toggleModal('registerModal') ">Sign up</a>
-                </p>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="hidden modal overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none justify-center items-center" id="registerModal" >
-        <div class="relative w-128 my-6 mx-auto max-w-md">
-        <!--content-->
-        <div class="border-0 rounded-xl shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-            <!--header-->
-            <div class="p-5 rounded-t-xl text-center mt-5 mx-10">
-            <h3 class="text-2xl font-semibold">
-                Sign up to Serv
-            </h3>
-            <p class="text-gray-400 mt-1 text-sm">
-                Join Serv and start your real project
-            </p>
-            </div>
-            <!--body-->
-            <div class="relative p-6 flex-auto mx-10">
-                <div class="mb-4">
-                    <label class="block text-grey-darker text-sm mb-2" for="username">
-                        Full Name
-                    </label>
-                    <input class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 placeholder-serv-text text-xs" id="username" type="text" placeholder="Your name">
-                </div>
-                <div class="mb-4">
-                    <label class="block text-grey-darker text-sm mb-2" for="email">
-                        Email
-                    </label>
-                    <input class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 placeholder-serv-text text-xs" id="email" type="email" placeholder="name@domain.com">
-                </div>
-                <div>
-                    <label class="block text-grey-darker text-sm mb-2" for="password">
-                        Password
-                    </label>
-                    <input class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 placeholder-serv-text text-xs mb-3" id="password" type="password" placeholder="At least 8 characters">
-                </div>
-                <div class="flex items-center justify-between">
-                    <div class="inline-block text-xs text-gray-400">
-                        <label class="inline-flex items-center mt-3">
-                            <input type="checkbox" class="form-checkbox h-5 w-5 text-serv-button rounded border-serv-text"><span class="ml-2 text-gray-400">I agree to the <a href="#" class="text-serv-button">Terms & Conditions</a></span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-            <!--footer-->
-            <div class="px-6 pb-6 rounded-b-xl mx-10">
-                <button class="bg-serv-button text-white text-lg py-3 px-12 my-2 rounded-lg w-full">
-                    Sign up
-                </button>
-                <p href="#" class="text-center py-5">
-                    Already have account? <a href="#" class="text-serv-button" onclick="toggleModal('loginModal');toggleModal('registerModal') ">Sign in</a>
-                </p>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="hidden opacity-75 fixed inset-0 z-40 bg-black" id="loginModal-backdrop"></div>
-    <div class="hidden opacity-75 fixed inset-0 z-40 bg-black" id="registerModal-backdrop"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lity/2.4.1/lity.min.js"
-        integrity="sha512-UU0D/t+4/SgJpOeBYkY+lG16MaNF8aqmermRIz8dlmQhOlBnw6iQrnt4Ijty513WB3w+q4JO75IX03lDj6qQNA=="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"
-        integrity="sha512-/ncZdOhQm5pgj5KHy720Ck7XF5RzYK6rtUsLNnGcitXrKT3wUYzTrPlOSG7SdL2kDzkuLEOFvrQRyllcZkeAlg=="
-        crossorigin="anonymous"></script>
-    <script src="js/toggleModal.js"></script>
-    <script>
-        $(document).ready(function() {
-            $(".modal").on('click', ':not(.relative)', function (e) {
-                e.stopPropagation();
-            });
-            $("#loginModal").on('click', function (e) {
-                toggleModal('loginModal');
-            });
-        });
-    </script>
+    
+    <?php include 'components/modals/login.php' ?>
+    <?php include 'components/modals/register.php' ?>
+
+    <?php include 'includes/scripts.php' ?>
 </body>
 
 </html>
