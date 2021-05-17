@@ -12,7 +12,7 @@
         <!-- top -->
         <div class="hero-bg">
             <!-- header -->
-            <?php include 'components/navbar.php' ?>
+            <?php include 'components/navbar/guest.php' ?>
 
             <!-- hero -->
             <div class="hero">
