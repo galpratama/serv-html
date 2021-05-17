@@ -12,8 +12,7 @@
         <!-- top -->
         <div class="hero-bg">
             <!-- header -->
-            <?php include 'components/navbar/guest.php' ?>
-
+            <?php isset($_GET['auth']) ? include 'components/navbar/auth.php' : include 'components/navbar/guest.php' ?>
             <!-- hero -->
             <div class="hero">
                 <div class="mx-auto flex pt-16 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col">
@@ -45,19 +44,19 @@
                 </div>
                 <div class="lg:mb-20 mb-10 flex sm:space-x-4 space-x-1">
                     <div class="flex-1 flex items-center justify-center py-3 px-6">
-                        <img src="brand-logo/netflix.svg" alt="">
+                        <img src="images/brand-logo/netflix.svg" alt="">
                     </div>
                     <div class="flex-1 flex items-center justify-center py-3 px-6">
-                        <img src="brand-logo/amazon.svg" alt="">
+                        <img src="images/brand-logo/amazon.svg" alt="">
                     </div>
                     <div class="flex-1 flex items-center justify-center py-3 px-6">
-                        <img src="brand-logo/uber.svg" alt="">
+                        <img src="images/brand-logo/uber.svg" alt="">
                     </div>
                     <div class="flex-1 flex items-center justify-center py-3 px-6">
-                        <img src="brand-logo/grab.svg" alt="">
+                        <img src="images/brand-logo/grab.svg" alt="">
                     </div>
                     <div class="flex-1 flex items-center justify-center py-3 px-6">
-                        <img src="brand-logo/google.svg" alt="">
+                        <img src="images/brand-logo/google.svg" alt="">
                     </div>
                 </div>
             </div>

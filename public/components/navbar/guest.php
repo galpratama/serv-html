@@ -18,11 +18,11 @@
                 id="menu">
                 <nav
                     class="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6">
-                    <a href="" class="block nav-link active font-medium">Home</a>
-                    <a href="" class="block nav-link text-serv-text">Explore</a>
-                    <a href="" class="block nav-link text-serv-text">How It Works</a>
-                    <a href="" class="block nav-link text-serv-text">Stories</a>
-                    <a href="" class="block nav-link text-serv-text">Tips</a>
+                    <a href="#" class="block nav-link active font-medium">Home</a>
+                    <a href="#" class="block nav-link text-serv-text">Explore</a>
+                    <a href="#" class="block nav-link text-serv-text">How It Works</a>
+                    <a href="#" class="block nav-link text-serv-text">Stories</a>
+                    <a href="#" class="block nav-link text-serv-text">Tips</a>
                 </nav>
             </div>
 
