@@ -37,8 +37,21 @@
                     <!-- details heading -->
                     <div class="details-heading">
                         <h1 class="font-semibold text-2xl">I Will Design WordPress eCommerce Modules</h1>
-                        <div class="my-2">
+                        <div class="my-3">
                             <?php include 'components/rating.php'; ?>
+                        </div>
+                    </div>
+                    <div class="image-gallery bg-gray-100 p-3 rounded-lg my-4" x-data="gallery()" >
+                        <img :src="featured" alt="" class="rounded-lg cursor-pointer w-100" data-lity>
+                        <div class="flex overflow-x-scroll hide-scroll-bar dragscroll">
+                            <div class="flex flex-nowrap mt-2">
+                                <img :class="{'border-4 border-serv-button': active === 1}" @click="changeThumbnail('https://source.unsplash.com/_SgRNwAVNKw/1600x900/',1)" src="https://source.unsplash.com/_SgRNwAVNKw/250x160/" alt="" class="cursor-pointer rounded-lg inline-block w-36 mr-2">
+                                <img :class="{'border-4 border-serv-button': active === 2}" @click="changeThumbnail('https://source.unsplash.com/GXNo-OJynTQ/1600x900/',2)" src="https://source.unsplash.com/GXNo-OJynTQ/250x160/" alt="" class="cursor-pointer rounded-lg inline-block w-36 mr-2">
+                                <img :class="{'border-4 border-serv-button': active === 3}" @click="changeThumbnail('https://source.unsplash.com/x-HpilsdKEk/1600x900/',3)" src="https://source.unsplash.com/x-HpilsdKEk/250x160/" alt="" class="cursor-pointer rounded-lg inline-block w-36 mr-2">
+                                <img :class="{'border-4 border-serv-button': active === 4}" @click="changeThumbnail('https://source.unsplash.com/hLit2zL-Dhk/1600x900/',4)" src="https://source.unsplash.com/hLit2zL-Dhk/250x160/" alt="" class="cursor-pointer rounded-lg inline-block w-36 mr-2">
+                                <img :class="{'border-4 border-serv-button': active === 5}" @click="changeThumbnail('https://source.unsplash.com/i1VQZsU86ok/1600x900/',5)" src="https://source.unsplash.com/i1VQZsU86ok/250x160/" alt="" class="cursor-pointer rounded-lg inline-block w-36 mr-2">
+                                <img :class="{'border-4 border-serv-button': active === 6}" @click="changeThumbnail('https://source.unsplash.com/iEiUITs149M/1600x900/',6)" src="https://source.unsplash.com/iEiUITs149M/250x160/" alt="" class="cursor-pointer rounded-lg inline-block w-36 mr-2">
+                            </div>
                         </div>
                     </div>
                 </main>
@@ -61,6 +74,18 @@
     <?php include 'components/modals/register.php' ?>
 
     <?php include 'includes/scripts.php' ?>
+    <script>
+        function gallery() {
+            return { 
+                featured: 'https://source.unsplash.com/_SgRNwAVNKw/1600x900/', 
+                active: 1,
+                changeThumbnail: function (url,position) {
+                    this.featured = url;
+                    this.active = position;
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

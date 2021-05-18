@@ -1,4 +1,4 @@
-<p class="rating text-lg font-light text-serv-text">
+<p class="rating text-md font-light text-serv-text">
     <svg width="26" height="24" viewBox="0 0 26 24" fill="none"
         class="inline  align-text-bottom" xmlns="http://www.w3.org/2000/svg">
         <path
