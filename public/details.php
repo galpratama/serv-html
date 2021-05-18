@@ -54,6 +54,48 @@
                             </div>
                         </div>
                     </div>
+                    <div class="content">
+                        <div x-data="{ tab: window.location.hash ? window.location.hash.substring(1) : 'description' }" id="tab_wrapper">
+                            <!-- The tabs navigation -->
+                            <nav class="my-8" aria-label="navigation">
+                                <a class="inline-block my-2 py-2 px-8 mr-2 font-medium rounded-xl" :class="{ 'bg-serv-bg text-white': tab === 'description','bg-serv-services-bg text-serv-bg' : tab !== 'description' }" @click.prevent="tab = 'description'; window.location.hash = 'description'" href="#">Description</a>
+                                <a class="inline-block my-2 py-2 px-8 mr-2 font-medium rounded-xl" :class="{ 'bg-serv-bg text-white': tab === 'seller' ,'bg-serv-services-bg text-serv-bg' : tab !== 'seller' }" @click.prevent="tab = 'seller'; window.location.hash = 'seller'" href="#">About The Seller</a>
+                                <a class="inline-block my-2 py-2 px-8 mr-2 font-medium rounded-xl" :class="{ 'bg-serv-bg text-white': tab === 'reviews' ,'bg-serv-services-bg text-serv-bg' : tab !== 'reviews' }" @click.prevent="tab = 'reviews'; window.location.hash = 'reviews'" href="#">Reviews</a>
+                            </nav>
+
+                            <!-- The tabs content -->
+                            <div x-show="tab === 'description'" class="text-md leading-8">
+                                <h2 class="text-xl font-semibold">About This <span class="text-serv-button">Services</span></h2>
+                                <div class="content-description mt-4 mb-8">
+                                    <p class="text-lg">
+                                    I will design wordpress ecommerce modules, professional website for you using WordPress! With this Services
+                                    </p>
+                                </div>
+                                <h3 class="text-lg font-semibold my-4">Why choose my Service?</h3>
+                                <ul class="mb-4 list-check">
+                                    <li class="pl-10 my-2">Fast delivery</li>
+                                    <li class="pl-10 my-2">Wide plugin support within WordPress</li>
+                                    <li class="pl-10 my-2">I can design logos and such for your website</li>
+                                    <li class="pl-10 my-2">Easily Communicate with me</li>
+                                </ul>
+                                <p class="mb-4">
+                                    If you only require modifications made to an existing WordPress website that you have, I have a different Services for that, which you can find on my profile!
+                                </p>
+                                <p class="font-medium mb-4">
+                                    Contact me to get started!
+                                </p>
+                            </div>
+                            <div x-show="tab === 'seller'">
+                                <h2 class="text-xl font-semibold mb-4">About <span class="text-serv-button">Me</span></h2>
+                                <p></p>
+                            </div>
+                            <div x-show="tab === 'reviews'">
+                                <h2 class="text-xl font-semibold mb-4"><span class="text-serv-button">210</span> Happy Clients</h2>
+                                <p></p>
+                            </div>
+
+                        </div>
+                    </div>
                 </main>
                 <aside class="lg:col-span-4 md:col-span-12 md:pt-0 p-4">
                     Right section here

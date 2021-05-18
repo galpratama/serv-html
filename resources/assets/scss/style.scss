@@ -38,3 +38,10 @@ body {
         background-position: center top;
     }
 }
+
+.list-check {
+    li {
+        background: url('../images/check-icon.svg') no-repeat left center;
+        list-style: none;
+    }
+}
