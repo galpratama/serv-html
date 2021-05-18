@@ -11,40 +11,43 @@
             Enter your email & password to continue
         </p>
         </div>
-        <!--body-->
-        <div class="relative p-6 flex-auto mx-10">
-            <div class="mb-4">
-                <label class="block text-grey-darker text-sm mb-2" for="username">
-                    Email
-                </label>
-                <input class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 placeholder-serv-text text-xs" id="username" type="text" placeholder="name@domain.com">
-                </div>
-                <div>
-                <label class="block text-grey-darker text-sm mb-2" for="password">
-                    Password
-                </label>
-                <input class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 placeholder-serv-text text-xs mb-3" id="password" type="password" placeholder="At least 8 characters">
-                </div>
-                <div class="flex items-center justify-between">
-                <div class="inline-block text-xs text-gray-400">
-                    <label class="inline-flex items-center mt-3">
-                        <input type="checkbox" class="form-checkbox h-5 w-5 text-serv-button rounded border-serv-text"><span class="ml-2 text-gray-400">Remember me</span>
+        <form action="index.php" method="GET">
+            <!--body-->
+            <div class="relative p-6 flex-auto mx-10">
+                <div class="mb-4">
+                    <label class="block text-grey-darker text-sm mb-2" for="username">
+                        Email
                     </label>
-                </div>
-                <a class="inline-block align-baseline text-xs text-serv-button mt-2 font-medium" href="#">
-                    Forgot Password?
-                </a>
-                </div>
-        </div>
-        <!--footer-->
-        <div class="px-6 pb-6 rounded-b-xl mx-10">
-            <button class="bg-serv-button text-white text-lg py-3 px-12 my-2 rounded-lg w-full">
-                Log in
-            </button>
-            <p href="#" class="text-center py-5">
-                Dont have account? <a href="#" class="text-serv-button" onclick="toggleModal('loginModal');toggleModal('registerModal') ">Sign up</a>
-            </p>
-        </div>
+                    <input name="email" class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 placeholder-serv-text text-xs" id="username" type="text" placeholder="name@domain.com">
+                    </div>
+                    <div>
+                    <label class="block text-grey-darker text-sm mb-2" for="password">
+                        Password
+                    </label>
+                    <input name="password" class="appearance-none border border-gray-300 rounded-lg w-full py-3 px-4 placeholder-serv-text text-xs mb-3" id="password" type="password" placeholder="At least 8 characters">
+                    </div>
+                    <div class="flex items-center justify-between">
+                    <div class="inline-block text-xs text-gray-400">
+                        <label class="inline-flex items-center mt-3">
+                            <input type="checkbox" class="form-checkbox h-5 w-5 text-serv-button rounded border-serv-text"><span class="ml-2 text-gray-400">Remember me</span>
+                        </label>
+                    </div>
+                    <a class="inline-block align-baseline text-xs text-serv-button mt-2 font-medium" href="#">
+                        Forgot Password?
+                    </a>
+                    </div>
+            </div>
+            <!--footer-->
+            <div class="px-6 pb-6 rounded-b-xl mx-10">
+                <input type="hidden" name="auth" value="true">
+                <button class="bg-serv-button text-white text-lg py-3 px-12 my-2 rounded-lg w-full" type="submit">
+                    Log in
+                </button>
+                <p href="#" class="text-center py-5">
+                    Dont have account? <a href="#" class="text-serv-button" onclick="toggleModal('loginModal');toggleModal('registerModal') ">Sign up</a>
+                </p>
+            </div>
+        </form>
     </div>
     </div>
 </div>

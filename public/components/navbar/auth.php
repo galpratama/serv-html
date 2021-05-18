@@ -2,7 +2,7 @@
     class="h-full w-full border-box transition-all duration-500 linear lg:px-16 md:px-20 px-8 py-8 bg-white">
     <div class="navbar-1-1" style="font-family: 'Poppins', sans-serif">
         <div class=" mx-auto flex flex-wrap flex-row items-center justify-between">
-            <a href="" class="flex text-3xl font-bold items-center">
+            <a href="index.php" class="flex text-3xl font-bold items-center">
                 SERV
             </a>
             <label for="menu-toggle" class="cursor-pointer lg:hidden block">
@@ -18,14 +18,14 @@
                 id="menu">
                 <nav
                     class="lg:space-x-12 space-x-0 lg:flex items-center justify-between text-base pt-8 lg:pt-0 lg:space-y-0 space-y-6">
-                    <a href="#" class="block nav-link active font-medium">Home</a>
+                    <a href="index.php" class="block nav-link active font-medium">Home</a>
                     <a href="#" class="block nav-link text-serv-text">Explore</a>
                     <a href="#" class="block nav-link text-serv-text">How It Works</a>
                     <a href="#" class="block nav-link text-serv-text">Stories</a>
                     <a href="#" class="block nav-link text-serv-text">Tips</a>
                     <hr class="block lg:hidden">
-                    <a href="#" class="block lg:hidden nav-link text-serv-text">Dashboard</a>
-                    <a href="#" class="block lg:hidden nav-link text-serv-text">Logout</a>
+                    <a href="dashboard.php" class="block lg:hidden nav-link text-serv-text">Dashboard</a>
+                    <a href="index.php" class="block lg:hidden nav-link text-serv-text">Logout</a>
                 </nav>
             </div>
 
@@ -37,10 +37,10 @@
                 </button>
                 <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
                     <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
-                    <a class="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                    <a class="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="dashboard.php">
                             Dashboard
                         </a>
-                        <a class="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">
+                        <a class="block px-4 py-2 mt-2 text-sm bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="index.php">
                             Logout
                         </a>
                     </div>
