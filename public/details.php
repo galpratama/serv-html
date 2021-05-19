@@ -135,7 +135,9 @@
                             </div>
                             <div x-show="tab === 'reviews'">
                                 <h2 class="text-xl font-semibold mb-4"><span class="text-serv-button">210</span> Happy Clients</h2>
-                                <p></p>
+                                <?php include 'components/review.php'; ?>
+                                <?php include 'components/review.php'; ?>
+                                <?php include 'components/review.php'; ?>
                             </div>
 
                         </div>

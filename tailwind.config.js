@@ -18,7 +18,9 @@ module.exports = {
         'serv-login-bg': '#D5D5E1',
         'serv-login-text': '#5C5C69',
         'serv-services-bg': '#F4F4FA',
-        'serv-hr': '#EFEFEF'
+        'serv-hr': '#EFEFEF',
+        'serv-testimonial-border': '#ECECF4',
+        'serv-yellow': '#FFBF47'
       },
       spacing: {
         '13': '3.25rem',
