@@ -13,7 +13,7 @@
         <div>
             <!-- header -->
             <?php isset($_GET['auth']) ? include 'components/navbar/auth.php' : include 'components/navbar/guest.php' ?>
-            <hr class="mx-8 lg:mx-16">
+            <hr class="mx-8 lg:mx-16 border-serv-hr">
 
             <!-- breadcrumb -->
             <nav class="text-sm mt-8 mx-8 lg:mx-20" aria-label="Breadcrumb">
@@ -67,7 +67,7 @@
                             <div x-show="tab === 'description'" class="text-md leading-8">
                                 <h2 class="text-xl font-semibold">About This <span class="text-serv-button">Services</span></h2>
                                 <div class="content-description mt-4 mb-8">
-                                    <p class="text-lg">
+                                    <p>
                                     I will design wordpress ecommerce modules, professional website for you using WordPress! With this Services
                                     </p>
                                 </div>
@@ -85,9 +85,53 @@
                                     Contact me to get started!
                                 </p>
                             </div>
-                            <div x-show="tab === 'seller'">
+                            <div x-show="tab === 'seller'" class="text-md leading-8">
                                 <h2 class="text-xl font-semibold mb-4">About <span class="text-serv-button">Me</span></h2>
-                                <p></p>
+                                <div class="grid md:grid-cols-12">
+                                    <div class="flex col-span-12 lg:col-span-6 items-center p-2">
+                                        <div class="flex items-center space-x-4">
+                                            <img src="https://avatars2.githubusercontent.com/u/1490347?s=460&u=39d7a6b9bc030244e2c509119e5f64eabb2b1727&v=4" alt="My profile" class="w-20 h-20 rounded-full ">
+                                        </div>
+                                        <div class="flex-grow p-4 leading-8 -mt-8 lg:mt-0">
+                                            <div class="font-semibold text-lg text-gray-700">
+                                                Alex Jones
+                                            </div>
+                                            <div class="text-gray-400">
+                                            Bandung, Indonesia
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-span-12 lg:col-span-6 items-center p-2">
+                                        <div class="ml-24 -mt-10 lg:my-6 lg:text-right">
+                                            <?php include 'components/rating.php'; ?>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="text-lg font-semibold my-4">Biography</h3>
+                                <div class="content-description mt-4 mb-8">
+                                    <p>
+                                    I am a web developer and web designer. I have an Associate Degree in Software
+                                    and Web Development, and I have much experience in programming languages,
+                                    such as HTML5, CSS3, PHP, Javascript and PHP. I can use Bootstrap and WordPress. 
+                                    I will provide fast response and clear communication in several languages. 
+                                    Feel free to contact me, thank you!
+                                    </p>
+                                </div>
+                                <h3 class="text-lg font-semibold my-4">My Experiences</h3>
+                                <ul class="mb-8 list-check">
+                                    <li class="pl-10 my-2">More than 9 years of experience</li>
+                                    <li class="pl-10 my-2">Knowledge in the fields of interface design, marketing and etc</li>
+                                    <li class="pl-10 my-2">Lead Developer at Sony Music for 8 Years</li>
+                                </ul>
+                                <h3 class="text-lg font-semibold my-4">Skills</h3>
+                                <div class="skills mb-8">
+                                    <span class="inline-block px-3 py-1 mr-2 rounded bg-serv-services-bg">Web Development</span>
+                                    <span class="inline-block px-3 py-1 mr-2 rounded bg-serv-services-bg">Web Design</span>
+                                </div>
+                                <hr class="border-serv-services-bg">
+                                <p class="my-4 text-gray-400 text-lg">
+                                    Joined Since 20 April 2021
+                                </p>
                             </div>
                             <div x-show="tab === 'reviews'">
                                 <h2 class="text-xl font-semibold mb-4"><span class="text-serv-button">210</span> Happy Clients</h2>
