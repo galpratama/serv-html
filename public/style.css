@@ -835,6 +835,9 @@ select{
 .h-4{
 	height: 1rem;
 }
+.min-h-\[85vh\]{
+	min-height: 85vh;
+}
 .w-3{
 	width: 0.75rem;
 }
@@ -880,11 +883,32 @@ select{
 .w-4{
 	width: 1rem;
 }
+.w-24{
+	width: 6rem;
+}
+.w-48{
+	width: 12rem;
+}
+.w-72{
+	width: 18rem;
+}
+.w-8{
+	width: 2rem;
+}
+.w-80{
+	width: 20rem;
+}
 .max-w-full{
 	max-width: 100%;
 }
 .max-w-md{
 	max-width: 28rem;
+}
+.max-w-lg{
+	max-width: 32rem;
+}
+.max-w-sm{
+	max-width: 24rem;
 }
 .flex-1{
 	flex: 1 1 0%;
@@ -1200,6 +1224,14 @@ select{
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
 }
+.px-20{
+	padding-left: 5rem;
+	padding-right: 5rem;
+}
+.px-24{
+	padding-left: 6rem;
+	padding-right: 6rem;
+}
 .pt-6{
 	padding-top: 1.5rem;
 }
@@ -1245,6 +1277,12 @@ select{
 .pt-8{
 	padding-top: 2rem;
 }
+.pb-24{
+	padding-bottom: 6rem;
+}
+.pb-15{
+	padding-bottom: 3.75rem;
+}
 .text-center{
 	text-align: center;
 }
@@ -1282,6 +1320,10 @@ select{
 	font-size: 0.75rem;
 	line-height: 1rem;
 }
+.text-4xl{
+	font-size: 2.25rem;
+	line-height: 2.5rem;
+}
 .font-medium{
 	font-weight: 500;
 }
@@ -1308,6 +1350,9 @@ select{
 }
 .leading-none{
 	line-height: 1;
+}
+.leading-6{
+	line-height: 1.5rem;
 }
 .tracking-wide{
 	letter-spacing: 0.025em;
@@ -1391,6 +1436,18 @@ select{
 .outline-none{
 	outline: 2px solid transparent;
 	outline-offset: 2px;
+}
+.filter{
+	--tw-blur: var(--tw-empty,/*!*/ /*!*/);
+	--tw-brightness: var(--tw-empty,/*!*/ /*!*/);
+	--tw-contrast: var(--tw-empty,/*!*/ /*!*/);
+	--tw-grayscale: var(--tw-empty,/*!*/ /*!*/);
+	--tw-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+	--tw-invert: var(--tw-empty,/*!*/ /*!*/);
+	--tw-saturate: var(--tw-empty,/*!*/ /*!*/);
+	--tw-sepia: var(--tw-empty,/*!*/ /*!*/);
+	--tw-drop-shadow: var(--tw-empty,/*!*/ /*!*/);
+	filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 .transition{
 	transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
