@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         'serv-bg': '#082431',
+        'serv-bg-explore': '#F8F8FD',
         'serv-text': '#A2ADB1',
         'serv-email-text': '#537180',
         'serv-border': '#16303D',
@@ -21,7 +22,8 @@ module.exports = {
         'serv-services-bg': '#F4F4FA',
         'serv-hr': '#EFEFEF',
         'serv-testimonial-border': '#ECECF4',
-        'serv-yellow': '#FFBF47'
+        'serv-yellow': '#FFBF47',
+        'serv-explore-button': '#F0F0FC'
       },
       spacing: {
         '13': '3.25rem',

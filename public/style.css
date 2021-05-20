@@ -679,6 +679,10 @@ select{
 	margin-left: 1rem;
 	margin-right: 1rem;
 }
+.mx-6{
+	margin-left: 1.5rem;
+	margin-right: 1.5rem;
+}
 .-mx-3{
 	margin-left: -0.75rem;
 	margin-right: -0.75rem;
@@ -721,17 +725,23 @@ select{
 .mr-4{
 	margin-right: 1rem;
 }
-.mb-3{
-	margin-bottom: 0.75rem;
-}
-.mb-5{
-	margin-bottom: 1.25rem;
+.mb-1{
+	margin-bottom: 0.25rem;
 }
 .mb-10{
 	margin-bottom: 2.5rem;
 }
 .mb-12{
 	margin-bottom: 3rem;
+}
+.mb-3{
+	margin-bottom: 0.75rem;
+}
+.mb-5{
+	margin-bottom: 1.25rem;
+}
+.mb-6{
+	margin-bottom: 1.5rem;
 }
 .mb-2{
 	margin-bottom: 0.5rem;
@@ -744,9 +754,6 @@ select{
 }
 .mt-3{
 	margin-top: 0.75rem;
-}
-.mb-6{
-	margin-bottom: 1.5rem;
 }
 .mr-1{
 	margin-right: 0.25rem;
@@ -771,6 +778,9 @@ select{
 }
 .mt-6{
 	margin-top: 1.5rem;
+}
+.mt-10{
+	margin-top: 2.5rem;
 }
 .block{
 	display: block;
@@ -804,9 +814,6 @@ select{
 }
 .h-16{
 	height: 4rem;
-}
-.h-\[85vh\]{
-	height: 85vh;
 }
 .h-auto{
 	height: auto;
@@ -856,17 +863,20 @@ select{
 .w-auto{
 	width: auto;
 }
+.w-80{
+	width: 20rem;
+}
 .w-15{
 	width: 3.75rem;
 }
 .w-px{
 	width: 1px;
 }
-.w-96{
-	width: 24rem;
-}
 .w-14{
 	width: 3.5rem;
+}
+.w-96{
+	width: 24rem;
 }
 .w-128{
 	width: 32rem;
@@ -883,32 +893,11 @@ select{
 .w-4{
 	width: 1rem;
 }
-.w-24{
-	width: 6rem;
-}
-.w-48{
-	width: 12rem;
-}
-.w-72{
-	width: 18rem;
-}
-.w-8{
-	width: 2rem;
-}
-.w-80{
-	width: 20rem;
-}
 .max-w-full{
 	max-width: 100%;
 }
 .max-w-md{
 	max-width: 28rem;
-}
-.max-w-lg{
-	max-width: 32rem;
-}
-.max-w-sm{
-	max-width: 24rem;
 }
 .flex-1{
 	flex: 1 1 0%;
@@ -989,6 +978,9 @@ select{
 }
 .gap-5{
 	gap: 1.25rem;
+}
+.gap-4{
+	gap: 1rem;
 }
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
 	--tw-space-x-reverse: 0;
@@ -1120,6 +1112,10 @@ select{
 	--tw-bg-opacity: 1;
 	background-color: rgba(34, 176, 125, var(--tw-bg-opacity));
 }
+.bg-serv-explore-button{
+	--tw-bg-opacity: 1;
+	background-color: rgba(240, 240, 252, var(--tw-bg-opacity));
+}
 .bg-serv-email{
 	--tw-bg-opacity: 1;
 	background-color: rgba(11, 45, 61, var(--tw-bg-opacity));
@@ -1134,6 +1130,10 @@ select{
 }
 .bg-transparent{
 	background-color: transparent;
+}
+.bg-serv-bg-explore{
+	--tw-bg-opacity: 1;
+	background-color: rgba(248, 248, 253, var(--tw-bg-opacity));
 }
 .fill-current{
 	fill: currentColor;
@@ -1200,10 +1200,6 @@ select{
 	padding-left: 3rem;
 	padding-right: 3rem;
 }
-.px-6{
-	padding-left: 1.5rem;
-	padding-right: 1.5rem;
-}
 .py-10{
 	padding-top: 2.5rem;
 	padding-bottom: 2.5rem;
@@ -1211,6 +1207,10 @@ select{
 .px-10{
 	padding-left: 2.5rem;
 	padding-right: 2.5rem;
+}
+.px-6{
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
 }
 .py-8{
 	padding-top: 2rem;
@@ -1223,14 +1223,6 @@ select{
 .py-5{
 	padding-top: 1.25rem;
 	padding-bottom: 1.25rem;
-}
-.px-20{
-	padding-left: 5rem;
-	padding-right: 5rem;
-}
-.px-24{
-	padding-left: 6rem;
-	padding-right: 6rem;
 }
 .pt-6{
 	padding-top: 1.5rem;
@@ -1277,12 +1269,6 @@ select{
 .pt-8{
 	padding-top: 2rem;
 }
-.pb-24{
-	padding-bottom: 6rem;
-}
-.pb-15{
-	padding-bottom: 3.75rem;
-}
 .text-center{
 	text-align: center;
 }
@@ -1320,10 +1306,6 @@ select{
 	font-size: 0.75rem;
 	line-height: 1rem;
 }
-.text-4xl{
-	font-size: 2.25rem;
-	line-height: 2.5rem;
-}
 .font-medium{
 	font-weight: 500;
 }
@@ -1350,9 +1332,6 @@ select{
 }
 .leading-none{
 	line-height: 1;
-}
-.leading-6{
-	line-height: 1.5rem;
 }
 .tracking-wide{
 	letter-spacing: 0.025em;
@@ -1556,6 +1535,9 @@ body {
 	.sm\:mt-0{
 		margin-top: 0px;
 	}
+	.sm\:inline-block{
+		display: inline-block;
+	}
 	.sm\:flex{
 		display: flex;
 	}
@@ -1607,6 +1589,9 @@ body {
 	.md\:-mt-1{
 		margin-top: -0.25rem;
 	}
+	.md\:inline-block{
+		display: inline-block;
+	}
 	.md\:inline{
 		display: inline;
 	}
@@ -1621,6 +1606,9 @@ body {
 	}
 	.md\:grid-cols-12{
 		grid-template-columns: repeat(12, minmax(0, 1fr));
+	}
+	.md\:grid-cols-2{
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 	.md\:flex-row{
 		flex-direction: row;
@@ -1729,6 +1717,9 @@ body {
 	}
 	.lg\:flex-grow{
 		flex-grow: 1;
+	}
+	.lg\:grid-cols-3{
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 	.lg\:flex-row{
 		flex-direction: row;
