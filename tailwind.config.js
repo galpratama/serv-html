@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   purge: [
     './public/**/*.{vue,js,ts,jsx,tsx,blade.php,html}'
   ],
