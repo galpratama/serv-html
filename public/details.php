@@ -64,7 +64,7 @@
                             </nav>
 
                             <!-- The tabs content -->
-                            <div x-show="tab === 'description'" class="text-md leading-8">
+                            <div x-show.transition.duration.500ms="tab === 'description'" class="text-md leading-8">
                                 <h2 class="text-xl font-semibold">About This <span class="text-serv-button">Services</span></h2>
                                 <div class="content-description mt-4 mb-8">
                                     <p>
@@ -85,7 +85,7 @@
                                     Contact me to get started!
                                 </p>
                             </div>
-                            <div x-show="tab === 'seller'" class="text-md leading-8">
+                            <div x-show.transition.duration.500ms="tab === 'seller'" class="text-md leading-8">
                                 <h2 class="text-xl font-semibold mb-4">About <span class="text-serv-button">Me</span></h2>
                                 <div class="grid md:grid-cols-12">
                                     <div class="flex col-span-12 lg:col-span-6 items-center p-2">
@@ -133,7 +133,7 @@
                                     Joined Since 20 April 2021
                                 </p>
                             </div>
-                            <div x-show="tab === 'reviews'">
+                            <div x-show.transition.duration.500ms="tab === 'reviews'">
                                 <h2 class="text-xl font-semibold mb-4"><span class="text-serv-button">210</span> Happy Clients</h2>
                                 <?php include 'components/review.php'; ?>
                                 <?php include 'components/review.php'; ?>
@@ -191,7 +191,7 @@
                             </ul>
                         </div>
                         <div class="booking px-4 pb-4">
-                            <a href="#" class="bg-serv-button text-white text-lg font-semibold py-4 px-12 my-2 rounded-xl text-center block" onclick="toggleModal('registerModal')">
+                            <a href="success.php?auth" class="bg-serv-button text-white text-lg font-semibold py-4 px-12 my-2 rounded-xl text-center block">
                                 Booking Now
                             </a>
                         </div>
