@@ -139,12 +139,63 @@
                                 <?php include 'components/review.php'; ?>
                                 <?php include 'components/review.php'; ?>
                             </div>
-
                         </div>
                     </div>
                 </main>
                 <aside class="lg:col-span-4 md:col-span-12 md:pt-0 p-4">
-                    Right section here
+                    <div class="border border-serv-testimonial-border rounded-lg mb-4"><!--horizantil margin is just for display-->
+                        <div class="flex items-start px-4 pt-6">
+                            <img class="w-16 h-16 rounded-full object-cover mr-4" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
+                            <div class="w-full">
+                                <div class="flex items-center justify-between">
+                                    <h2 class="text-xl font-medium text-serv-bg my-1">Farzhan Pill</h2>
+                                </div>
+                                <p class="text-md text-serv-text">
+                                    Website Developer
+                                </p>
+                            </div>
+                        </div>
+                        <div class="px-4 pt-6">
+                            <h2 class="text-serv-button text-xl font-semibold mb-4">Rp120.000</h2>
+                            <p class="text-serv-text text-sm leading-7">
+                                Complete WordPress website with full customization
+                                & SEO, and up to 3 pages and plugins.
+                            </p>
+                        </div>
+                        <div class="mx-4 mt-4 py-3 px-2 border border-serv-testimonial-border rounded-full flex items-center">
+                            <div class="flex-1 text-center text-sm font-medium">
+                                <svg class="inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="8" stroke="#082431" stroke-width="1.5"/>
+                                    <path d="M12 7V12L15 13.5" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                7 Days Delivery
+                            </div>
+                            <div class="flex-1 text-center text-sm font-medium">
+                                <svg class="inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="24" height="24" fill="white"/>
+                                    <path d="M19 13C19 15 19 18.5 14.6552 18.5C9.63448 18.5 6.12644 18.5 5 18.5" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M4 11.5C4 9.5 4 6 8.34483 6C13.3655 6 16.8736 6 18 6" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M7 21.5L4.14142 18.6414C4.06332 18.5633 4.06332 18.4367 4.14142 18.3586L7 15.5" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
+                                    <path d="M16 3L18.8586 5.85858C18.9367 5.93668 18.9367 6.06332 18.8586 6.14142L16 9" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>
+                                1 Revision Limit
+                            </div>
+                        </div>
+                        <div class="features-list px-4 pt-4 pb-2">
+                            <ul class="mb-4 list-check text-sm">
+                                <li class="pl-10 my-4">3 Pages</li>
+                                <li class="pl-10 my-4">Customized Design</li>
+                                <li class="pl-10 my-4">Responsive Design</li>
+                                <li class="pl-10 my-4">3 Plugins/Extensions</li>
+                                <li class="pl-10 my-4">E-Commerce Functionality</li>
+                            </ul>
+                        </div>
+                        <div class="booking px-4 pb-4">
+                            <a href="#" class="bg-serv-button text-white text-lg font-semibold py-4 px-12 my-2 rounded-xl text-center block" onclick="toggleModal('registerModal')">
+                                Booking Now
+                            </a>
+                        </div>
+                    </div>
                 </aside>
             </div>
         </section>
