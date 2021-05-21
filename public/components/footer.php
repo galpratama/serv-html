@@ -6,12 +6,12 @@
                 <div class="flex-1 mt-2 flex-col">
                     <h2 class="font-medium text-white text-lg mb-4">Company</h2>
                     <div class="my-3">
-                        <a href="#" class="text-serv-text font-light">
+                        <a href="index.php" class="text-serv-text font-light">
                             Home
                         </a>
                     </div>
                     <div class="my-3">
-                        <a href="#" class="text-serv-text font-light">
+                        <a href="explore.php" class="text-serv-text font-light">
                             Explore
                         </a>
                     </div>

@@ -104,10 +104,11 @@
                         remote workers to help you accomplishing <br class="lg:block hidden">
                         your projects. 
                     </p>
-                    <button
+                    <a
+                        href="explore.php"
                         class="bg-serv-button px-10 py-4 text-base text-white font-semibold rounded-xl cursor-pointer focus:outline-none tracking-wide">
                         Learn More
-                    </button>
+                    </a>
                 </div>
             </div>
         </div>
