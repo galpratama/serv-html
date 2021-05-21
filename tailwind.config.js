@@ -23,7 +23,8 @@ module.exports = {
         'serv-hr': '#EFEFEF',
         'serv-testimonial-border': '#ECECF4',
         'serv-yellow': '#FFBF47',
-        'serv-explore-button': '#F0F0FC'
+        'serv-explore-button': '#F0F0FC',
+        'serv-green-badge': '#DDFFF3'
       },
       spacing: {
         '13': '3.25rem',
