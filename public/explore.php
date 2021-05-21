@@ -67,6 +67,8 @@
     
     <?php include 'components/modals/login.php' ?>
     <?php include 'components/modals/register.php' ?>
+    <?php include 'components/modals/register-success.php' ?>
+
 
     <?php include 'includes/scripts.php' ?>
 </body>
