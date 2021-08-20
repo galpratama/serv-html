@@ -859,6 +859,9 @@ select{
 .-mt-2{
 	margin-top: -0.5rem;
 }
+.mt-0{
+	margin-top: 0px;
+}
 .block{
 	display: block;
 }
@@ -1944,6 +1947,9 @@ body {
 	.md\:mr-1{
 		margin-right: 0.25rem;
 	}
+	.md\:mt-6{
+		margin-top: 1.5rem;
+	}
 	.md\:block{
 		display: block;
 	}
@@ -2018,6 +2024,9 @@ body {
 	.md\:pl-0{
 		padding-left: 0px;
 	}
+	.md\:text-right{
+		text-align: right;
+	}
 	.md\:text-4xl{
 		font-size: 2.25rem;
 		line-height: 2.5rem;
@@ -2085,6 +2094,9 @@ body {
 	}
 	.lg\:mr-auto{
 		margin-right: auto;
+	}
+	.lg\:mt-6{
+		margin-top: 1.5rem;
 	}
 	.lg\:block{
 		display: block;
