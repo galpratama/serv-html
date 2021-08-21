@@ -76,7 +76,7 @@
                                                 Active
                                             </td>
                                             <td class="px-1 py-5 text-sm">
-                                                <a href="#" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
+                                                <a href="/dashboard/services/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
                                                     Edit Service
                                                 </a>
                                             </td>
@@ -106,7 +106,7 @@
                                                 Active
                                             </td>
                                             <td class="px-1 py-5 text-sm">
-                                                <a href="#" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
+                                                <a href="/dashboard/services/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
                                                     Edit Service
                                                 </a>
                                             </td>
@@ -136,7 +136,7 @@
                                                 Active
                                             </td>
                                             <td class="px-1 py-5 text-sm">
-                                                <a href="#" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
+                                                <a href="/dashboard/services/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
                                                     Edit Service
                                                 </a>
                                             </td>

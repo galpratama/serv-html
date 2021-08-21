@@ -20,14 +20,16 @@
                 <ol class="inline-flex p-0 list-none">
                     <li class="flex items-center">
                         <a href="#" class="text-gray-400">Programming & Tech</a>
-                        <svg class="w-3 h-3 mx-3 text-gray-400 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"/></svg>
+                        <svg class="w-3 h-3 mx-3 text-gray-400 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                            <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                        </svg>
                     </li>
                     <li class="flex items-center">
                         <a href="#" class="font-medium">Website Developer</a>
                     </li>
                 </ol>
             </nav>
-            
+
         </div>
 
         <!-- details -->
@@ -41,7 +43,7 @@
                             <?php include 'components/rating.php'; ?>
                         </div>
                     </div>
-                    <div class="p-3 my-4 bg-gray-100 rounded-lg image-gallery" x-data="gallery()" >
+                    <div class="p-3 my-4 bg-gray-100 rounded-lg image-gallery" x-data="gallery()">
                         <img :src="featured" alt="" class="rounded-lg cursor-pointer w-100" data-lity>
                         <div class="flex overflow-x-scroll hide-scroll-bar dragscroll">
                             <div class="flex mt-2 flex-nowrap">
@@ -68,7 +70,7 @@
                                 <h2 class="text-xl font-semibold">About This <span class="text-serv-button">Services</span></h2>
                                 <div class="mt-4 mb-8 content-description">
                                     <p>
-                                    I will design wordpress ecommerce modules, professional website for you using WordPress! With this Services
+                                        I will design wordpress ecommerce modules, professional website for you using WordPress! With this Services
                                     </p>
                                 </div>
                                 <h3 class="my-4 text-lg font-semibold">Why choose my Service?</h3>
@@ -97,7 +99,7 @@
                                                 Alex Jones
                                             </div>
                                             <div class="text-gray-400">
-                                            Bandung, Indonesia
+                                                Bandung, Indonesia
                                             </div>
                                         </div>
                                     </div>
@@ -110,11 +112,11 @@
                                 <h3 class="my-4 text-lg font-semibold">Biography</h3>
                                 <div class="mt-4 mb-8 content-description">
                                     <p>
-                                    I am a web developer and web designer. I have an Associate Degree in Software
-                                    and Web Development, and I have much experience in programming languages,
-                                    such as HTML5, CSS3, PHP, Javascript and PHP. I can use Bootstrap and WordPress. 
-                                    I will provide fast response and clear communication in several languages. 
-                                    Feel free to contact me, thank you!
+                                        I am a web developer and web designer. I have an Associate Degree in Software
+                                        and Web Development, and I have much experience in programming languages,
+                                        such as HTML5, CSS3, PHP, Javascript and PHP. I can use Bootstrap and WordPress.
+                                        I will provide fast response and clear communication in several languages.
+                                        Feel free to contact me, thank you!
                                     </p>
                                 </div>
                                 <h3 class="my-4 text-lg font-semibold">My Experiences</h3>
@@ -143,7 +145,8 @@
                     </div>
                 </main>
                 <aside class="p-4 lg:col-span-4 md:col-span-12 md:pt-0">
-                    <div class="mb-4 border rounded-lg border-serv-testimonial-border"><!--horizantil margin is just for display-->
+                    <div class="mb-4 border rounded-lg border-serv-testimonial-border">
+                        <!--horizantil margin is just for display-->
                         <div class="flex items-start px-4 pt-6">
                             <img class="object-cover w-16 h-16 mr-4 rounded-full" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
                             <div class="w-full">
@@ -155,28 +158,21 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="px-4 pt-6">
-                            <h2 class="mb-4 text-xl font-semibold text-serv-button">Rp120.000</h2>
-                            <p class="text-sm leading-7 text-serv-text">
-                                Complete WordPress website with full customization
-                                & SEO, and up to 3 pages and plugins.
-                            </p>
-                        </div>
                         <div class="flex items-center px-2 py-3 mx-4 mt-4 border rounded-full border-serv-testimonial-border">
                             <div class="flex-1 text-sm font-medium text-center">
                                 <svg class="inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="12" cy="12" r="8" stroke="#082431" stroke-width="1.5"/>
-                                    <path d="M12 7V12L15 13.5" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
+                                    <circle cx="12" cy="12" r="8" stroke="#082431" stroke-width="1.5" />
+                                    <path d="M12 7V12L15 13.5" stroke="#082431" stroke-width="1.5" stroke-linecap="round" />
                                 </svg>
                                 7 Days Delivery
                             </div>
                             <div class="flex-1 text-sm font-medium text-center">
                                 <svg class="inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <rect width="24" height="24" fill="white"/>
-                                    <path d="M19 13C19 15 19 18.5 14.6552 18.5C9.63448 18.5 6.12644 18.5 5 18.5" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
-                                    <path d="M4 11.5C4 9.5 4 6 8.34483 6C13.3655 6 16.8736 6 18 6" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
-                                    <path d="M7 21.5L4.14142 18.6414C4.06332 18.5633 4.06332 18.4367 4.14142 18.3586L7 15.5" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
-                                    <path d="M16 3L18.8586 5.85858C18.9367 5.93668 18.9367 6.06332 18.8586 6.14142L16 9" stroke="#082431" stroke-width="1.5" stroke-linecap="round"/>
+                                    <rect width="24" height="24" fill="white" />
+                                    <path d="M19 13C19 15 19 18.5 14.6552 18.5C9.63448 18.5 6.12644 18.5 5 18.5" stroke="#082431" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M4 11.5C4 9.5 4 6 8.34483 6C13.3655 6 16.8736 6 18 6" stroke="#082431" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M7 21.5L4.14142 18.6414C4.06332 18.5633 4.06332 18.4367 4.14142 18.3586L7 15.5" stroke="#082431" stroke-width="1.5" stroke-linecap="round" />
+                                    <path d="M16 3L18.8586 5.85858C18.9367 5.93668 18.9367 6.06332 18.8586 6.14142L16 9" stroke="#082431" stroke-width="1.5" stroke-linecap="round" />
                                 </svg>
                                 1 Revision Limit
                             </div>
@@ -190,6 +186,19 @@
                                 <li class="pl-10 my-4">E-Commerce Functionality</li>
                             </ul>
                         </div>
+                        <div class="px-4">
+                            <table class="w-full mb-4">
+                                <tr>
+                                    <td class="text-sm leading-7 text-serv-text">
+                                        Price starts from:
+                                    </td>
+                                    <td class="mb-4 text-xl font-semibold text-right text-serv-button">
+                                        Rp120.000
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </div>
                         <div class="px-4 pb-4 booking">
                             <a href="success.php?auth" class="block px-12 py-4 my-2 text-lg font-semibold text-center text-white bg-serv-button rounded-xl">
                                 Booking Now
@@ -202,13 +211,13 @@
         <div class="pt-6 pb-20 mx-8 lg:mx-20">
 
 
-            
+
         </div>
 
         <!-- footer -->
         <?php include 'components/footer.php' ?>
     </div>
-    
+
     <?php include 'components/modals/login.php' ?>
     <?php include 'components/modals/register.php' ?>
     <?php include 'components/modals/register-success.php' ?>
@@ -217,10 +226,10 @@
     <?php include 'includes/scripts.php' ?>
     <script>
         function gallery() {
-            return { 
-                featured: 'https://source.unsplash.com/_SgRNwAVNKw/1600x900/', 
+            return {
+                featured: 'https://source.unsplash.com/_SgRNwAVNKw/1600x900/',
                 active: 1,
-                changeThumbnail: function (url,position) {
+                changeThumbnail: function(url, position) {
                     this.featured = url;
                     this.active = position;
                 }
