@@ -162,7 +162,7 @@
                                         </div>
                                         <div class="p-4 md:text-right lg:col-span-6 md:col-span-12">
                                             <a href="#" class="inline-flex justify-center px-4 py-2 mr-4 text-sm font-medium text-gray-700 bg-white border border-gray-600 rounded-lg shadow-sm hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300">
-                                                Cancel
+                                                See Reviews
                                             </a>
                                             <a href="/dashboard/services/edit.php" class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-lg shadow-sm bg-serv-email hover:bg-serv-email-text focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-serv-email">
                                                 Edit Service
