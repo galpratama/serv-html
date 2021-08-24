@@ -1,0 +1,142 @@
+<!doctype html>
+<html x-data="data()" lang="en">
+
+<head>
+    <?php include '../../includes/dashboard/meta.php' ?>
+    <?php include '../../includes/dashboard/styles.php' ?>
+    <title>Services</title>
+</head>
+
+<body class="antialiased">
+    <div class="flex h-screen bg-serv-services-bg" :class="{ 'overflow-hidden': isSideMenuOpen }">
+        <?php include '../../components/dashboard/menu/desktop.php' ?>
+
+        <div x-show="isSideMenuOpen" x-transition:enter="transition ease-in-out duration-150" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in-out duration-150" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" class="fixed inset-0 z-10 flex items-end bg-black bg-opacity-50 sm:items-center sm:justify-center"></div>
+        <?php include '../../components/dashboard/menu/mobile.php' ?>
+
+        <div class="flex flex-col flex-1 w-full">
+            <?php include '../../components/dashboard/header.php' ?>
+
+            <main class="h-full overflow-y-auto">
+                <div class="container mx-auto">
+                    <div class="grid w-full gap-5 px-10 mx-auto md:grid-cols-12">
+                        <div class="col-span-12">
+                            <h2 class="mt-8 mb-1 text-2xl font-semibold text-gray-700">
+                                Add Your Service
+                            </h2>
+                            <p class="text-sm text-gray-400">
+                                Upload the services you provide
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- breadcrumb -->
+                <nav class="mx-10 mt-8 text-sm" aria-label="Breadcrumb">
+                    <ol class="inline-flex p-0 list-none">
+                        <li class="flex items-center">
+                            <a href="#" class="text-gray-400">My Services</a>
+                            <svg class="w-3 h-3 mx-3 text-gray-400 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z" />
+                            </svg>
+                        </li>
+                        <li class="flex items-center">
+                            <a href="#" class="font-medium">Add Your Service</a>
+                        </li>
+                    </ol>
+                </nav>
+                <section class="container px-6 mx-auto mt-5">
+                    <div class="grid gap-5 md:grid-cols-12">
+                        <main class="col-span-12 p-4 md:pt-0">
+                            <div class="px-2 py-2 mt-2 bg-white rounded-xl">
+                                <form action="#" method="POST">
+                                    <div class="">
+                                        <div class="px-4 py-5 sm:p-6">
+                                            <div class="grid grid-cols-6 gap-6">
+                                                <div class="col-span-6">
+                                                    <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Judul Service</label>
+                                                    <input placeholder="Service apa yang ingin kamu tawarkan?" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Deskripsi Service</label>
+                                                    <input placeholder="Jelaskan Service apa yang kamu tawarkan?" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <label for="service-name" class="block mb-2 font-medium text-gray-700 text-md">Keunggulan Service kamu</label>
+                                                    <p class="block mb-3 text-sm text-gray-700">
+                                                        Hal apa aja yang didapakan dari service kamu?
+                                                    </p>
+                                                    <input placeholder="Keunggulan 1" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 2" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 3" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <button type="submit" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                                        Tambahkan Keunggulan +
+                                                    </button>
+                                                </div>
+                                                <div class="col-span-6 -mb-6">
+                                                    <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Estimasi Service & Jumlah Revisi</label>
+                                                </div>
+                                                <div class="col-span-6 sm:col-span-3">
+                                                    <select id="estimation" name="estimation" autocomplete="estimation" class="block w-full px-3 py-3 pr-10 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                                        <option>Butuh Berapa hari service kamu selesai?</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-span-6 sm:col-span-3">
+                                                    <select id="estimation" name="estimation" autocomplete="estimation" class="block w-full px-3 py-3 pr-10 mt-1 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+                                                        <option>Maksimal Revisi service kamu</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Harga Service Kamu</label>
+                                                    <input placeholder="Total Harga Service Kamu" type="number" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Thumbnail Service Feeds</label>
+                                                    <input placeholder="Keunggulan 1" type="file" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 2" type="file" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 3" type="file" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <button type="submit" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                                        Tambahkan Gambar +
+                                                    </button>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Keunggulan kamu</label>
+                                                    <input placeholder="Keunggulan 1" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 2" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 3" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <button type="submit" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                                        Tambahkan Keunggulan +
+                                                    </button>
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Note <span class="text-gray-400">(Optional)</span></label>
+                                                    <input placeholder="Hal yang ingin disampaikan oleh kamu?" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                </div>
+                                                <div class="col-span-6">
+                                                    <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Tagline <span class="text-gray-400">(Optional)</span></label>
+                                                    <button type="submit" class="inline-flex justify-center px-3 py-2 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                                        Tambah Tagline +
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="px-4 py-3 text-right sm:px-6">
+                                            <button type="submit" class="inline-flex justify-center px-4 py-2 mr-4 text-sm font-medium text-gray-700 bg-white border border-gray-600 rounded-lg shadow-sm hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300">
+                                                Cancel
+                                            </button>
+                                            <button type="submit" class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white bg-green-600 border border-transparent rounded-lg shadow-sm hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                                                Create Service
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </main>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </div>
+    <?php include '../../includes/dashboard/scripts.php' ?>
+</body>
+
+</html>

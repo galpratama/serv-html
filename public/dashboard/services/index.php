@@ -30,9 +30,9 @@
                         </div>
                         <div class="col-span-4 lg:text-right">
                             <div class="relative mt-0 md:mt-6">
-                                <button class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-button">
+                                <a href="/dashboard/services/add.php" class="inline-block px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-button">
                                     + Add Service
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -60,9 +60,9 @@
                                                         <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                                                     </div>
                                                     <div>
-                                                        <p class="font-medium text-black">
+                                                        <a href="/dashboard/services/details.php" class="font-medium text-black">
                                                             Design WordPress <br>E-Commerce Modules
-                                                        </p>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </td>
@@ -76,7 +76,7 @@
                                                 Active
                                             </td>
                                             <td class="px-1 py-5 text-sm">
-                                                <a href="/dashboard/services/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
+                                                <a href="/dashboard/services/edit.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
                                                     Edit Service
                                                 </a>
                                             </td>
@@ -89,10 +89,10 @@
                                                         <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                                                     </div>
                                                     <div>
-                                                        <p class="font-medium text-black">
+                                                        <a href="/dashboard/services/details.php"  class="font-medium text-black">
                                                         Fix Any Issue on Your <br>
                                                         WordPress Website
-                                                        </p>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </td>
@@ -106,7 +106,7 @@
                                                 Active
                                             </td>
                                             <td class="px-1 py-5 text-sm">
-                                                <a href="/dashboard/services/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
+                                                <a href="/dashboard/services/edit.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
                                                     Edit Service
                                                 </a>
                                             </td>
@@ -119,10 +119,10 @@
                                                         <div class="absolute inset-0 rounded-full shadow-inner" aria-hidden="true"></div>
                                                     </div>
                                                     <div>
-                                                        <p class="font-medium text-black">
+                                                        <a href="/dashboard/services/details.php" class="font-medium text-black">
                                                         Create a UI Design <br>
                                                         for Your Application
-                                                        </p>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </td>
@@ -136,7 +136,7 @@
                                                 Active
                                             </td>
                                             <td class="px-1 py-5 text-sm">
-                                                <a href="/dashboard/services/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
+                                                <a href="/dashboard/services/edit.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
                                                     Edit Service
                                                 </a>
                                             </td>

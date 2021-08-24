@@ -58,7 +58,7 @@
                                 <section class="pt-6 pb-20 mx-8 w-auth">
                                     <div class="grid gap-5 md:grid-cols-12">
                                         <main class="p-4 lg:col-span-7 md:col-span-12">
-                                        <span class="inline-flex items-center justify-center px-3 py-2 mb-4 mr-2 text-xs leading-none text-green-500 rounded-full bg-serv-green-badge">Active</span>
+                                            <span class="inline-flex items-center justify-center px-3 py-2 mb-4 mr-2 text-xs leading-none text-green-500 rounded-full bg-serv-green-badge">Active</span>
 
                                             <!-- details heading -->
                                             <div class="details-heading">
@@ -109,18 +109,6 @@
                                         </main>
                                         <aside class="p-4 lg:col-span-5 md:col-span-12 md:pt-0">
                                             <div class="mb-4 border rounded-lg border-serv-testimonial-border">
-                                                <!--horizantil margin is just for display-->
-                                                <div class="flex items-start px-4 pt-6">
-                                                    <img class="object-cover w-16 h-16 mr-4 rounded-full" src="https://images.unsplash.com/photo-1542156822-6924d1a71ace?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="avatar">
-                                                    <div class="w-full">
-                                                        <div class="flex items-center justify-between">
-                                                            <h2 class="my-1 text-xl font-medium text-serv-bg">Farzhan Pill</h2>
-                                                        </div>
-                                                        <p class="text-md text-serv-text">
-                                                            Website Developer
-                                                        </p>
-                                                    </div>
-                                                </div>
                                                 <div class="flex items-center px-2 py-3 mx-4 mt-4 border rounded-full border-serv-testimonial-border">
                                                     <div class="flex-1 text-sm font-medium text-center">
                                                         <svg class="inline" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,6 +152,22 @@
                                                 </div>
                                             </div>
                                         </aside>
+                                        <div class="p-4 lg:col-span-6 md:col-span-12">
+                                            <button type="submit" class="inline-flex justify-center px-3 py-2 mb-2 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                                Programming & Tech
+                                            </button>
+                                            <button type="submit" class="inline-flex justify-center px-3 py-2 mb-2 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                                Website Developer
+                                            </button>
+                                        </div>
+                                        <div class="p-4 md:text-right lg:col-span-6 md:col-span-12">
+                                            <a href="#" class="inline-flex justify-center px-4 py-2 mr-4 text-sm font-medium text-gray-700 bg-white border border-gray-600 rounded-lg shadow-sm hover:bg-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-300">
+                                                Cancel
+                                            </a>
+                                            <a href="/dashboard/services/edit.php" class="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-lg shadow-sm bg-serv-email hover:bg-serv-email-text focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-serv-email">
+                                                Edit Service
+                                            </a>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
