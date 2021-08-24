@@ -81,8 +81,8 @@
                                                 Approved
                                             </td>
                                             <td class="px-1 py-5 text-sm">
-                                                <a href="/dashboard/services/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
-                                                    Service Details
+                                                <a href="/dashboard/requests/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
+                                                    Details
                                                 </a>
                                             </td>
                                         </tr>
@@ -120,8 +120,8 @@
                                                 Approved
                                             </td>
                                             <td class="px-1 py-5 text-sm">
-                                                <a href="/dashboard/services/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
-                                                    Service Details
+                                                <a href="/dashboard/requests/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
+                                                    Details
                                                 </a>
                                             </td>
                                         </tr>
@@ -159,8 +159,8 @@
                                                 Pending
                                             </td>
                                             <td class="px-1 py-5 text-sm">
-                                                <a href="/dashboard/services/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
-                                                    Service Details
+                                                <a href="/dashboard/requests/details.php" class="px-4 py-2 mt-2 text-left text-white rounded-xl bg-serv-email">
+                                                    Details
                                                 </a>
                                             </td>
                                         </tr>
