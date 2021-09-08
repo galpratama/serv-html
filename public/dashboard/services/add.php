@@ -65,10 +65,11 @@
                                                     <p class="block mb-3 text-sm text-gray-700">
                                                         Hal apa aja yang didapakan dari service kamu?
                                                     </p>
-                                                    <input placeholder="Keunggulan 1" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                                                    <input placeholder="Keunggulan 2" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                                                    <input placeholder="Keunggulan 3" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                                                    <button type="submit" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                                    <input placeholder="Keunggulan 1" type="text" name="advantages[]" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 2" type="text" name="advantages[]" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 3" type="text" name="advantages[]" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <div id="newServicesRow"></div>
+                                                    <button type="button" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500" id="addServicesRow">
                                                         Tambahkan Keunggulan +
                                                     </button>
                                                 </div>
@@ -91,19 +92,21 @@
                                                 </div>
                                                 <div class="col-span-6">
                                                     <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Thumbnail Service Feeds</label>
-                                                    <input placeholder="Keunggulan 1" type="file" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                                                    <input placeholder="Keunggulan 2" type="file" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                                                    <input placeholder="Keunggulan 3" type="file" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                                                    <button type="submit" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                                    <input placeholder="Keunggulan 1" type="file" name="thumbnails[]" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 2" type="file" name="thumbnails[]" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 3" type="file" name="thumbnails[]" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <div id="newThumbnailRow"></div>
+                                                    <button type="button" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500" id="addThumbnailRow">
                                                         Tambahkan Gambar +
                                                     </button>
                                                 </div>
                                                 <div class="col-span-6">
                                                     <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Keunggulan kamu</label>
-                                                    <input placeholder="Keunggulan 1" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                                                    <input placeholder="Keunggulan 2" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                                                    <input placeholder="Keunggulan 3" type="text" name="service-name" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
-                                                    <button type="submit" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+                                                    <input placeholder="Keunggulan 1" type="text" name="services[]" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 2" type="text" name="services[]" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <input placeholder="Keunggulan 3" type="text" name="services[]" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">
+                                                    <div id="newAdvantagesRow"></div>
+                                                    <button type="button" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500" id="addAdvantagesRow">
                                                         Tambahkan Keunggulan +
                                                     </button>
                                                 </div>
@@ -113,8 +116,9 @@
                                                 </div>
                                                 <div class="col-span-6">
                                                     <label for="service-name" class="block mb-3 font-medium text-gray-700 text-md">Tagline <span class="text-gray-400">(Optional)</span></label>
-                                                    <button type="submit" class="inline-flex justify-center px-3 py-2 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
-                                                        Tambah Tagline +
+                                                    <div id="newTaglineRow"></div>
+                                                    <button type="button" class="inline-flex justify-center px-3 py-2 mt-3 text-xs font-medium text-gray-700 bg-gray-100 border border-transparent rounded-lg hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500" id="addTaglineRow">
+                                                        Tambahkan Tagline +
                                                     </button>
                                                 </div>
                                             </div>
@@ -137,6 +141,63 @@
         </div>
     </div>
     <?php include '../../includes/dashboard/scripts.php' ?>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        // add row
+        $("#addAdvantagesRow").click(function() {
+            var html = '';
+            html += '<input placeholder="Keunggulan" type="text" name="advantages[]" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">';
+
+            $('#newAdvantagesRow').append(html);
+        });
+
+        // remove row
+        $(document).on('click', '#removeAdvantagesRow', function() {
+            $(this).closest('#inputFormAdvantagesRow').remove();
+        });
+    </script>
+    <script type="text/javascript">
+        // add row
+        $("#addServicesRow").click(function() {
+            var html = '';
+            html += '<input placeholder="Keunggulan" type="text" name="services[]" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">';
+
+            $('#newServicesRow').append(html);
+        });
+
+        // remove row
+        $(document).on('click', '#removeServicesRow', function() {
+            $(this).closest('#inputFormServicesRow').remove();
+        });
+    </script>
+    <script type="text/javascript">
+        // add row
+        $("#addTaglineRow").click(function() {
+            var html = '';
+            html += '<input placeholder="Keunggulan" type="text" name="tagline[]" id="service-name" autocomplete="service-name" class="block w-full py-3 mt-1 border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">';
+
+            $('#newTaglineRow').append(html);
+        });
+
+        // remove row
+        $(document).on('click', '#removeTaglineRow', function() {
+            $(this).closest('#inputFormTaglineRow').remove();
+        });
+    </script>
+    <script type="text/javascript">
+        // add row
+        $("#addThumbnailRow").click(function() {
+            var html = '';
+            html += '<input placeholder="Keunggulan 3" type="file" name="thumbnails[]" id="service-name" autocomplete="service-name" class="block w-full py-3 pl-5 mt-1 border border-gray-300 rounded-md shadow-sm focus:ring-green-500 focus:border-green-500 sm:text-sm">';
+
+            $('#newThumbnailRow').append(html);
+        });
+
+        // remove row
+        $(document).on('click', '#removeThumbnailRow', function() {
+            $(this).closest('#inputFormThumbnailRow').remove();
+        });
+    </script>
 </body>
 
 </html>
